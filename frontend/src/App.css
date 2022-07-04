@@ -1,8 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@100;300;400;700&display=swap');
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Gantari', sans-serif;
+  background-color: #DBE6FD;
+}
+
+/* Navbar */
+.nav-bar {
+  height: 70px;
+  background-color: #0A1931;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5rem 0;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #DFF6FF;
+}
+
+.nav-bar h2 {
+  font-size: 40px;
+  background-color: #0A1931;
+}
+
+/* Home */
+.home-parent {
+  display: flex;
+  height: 90vh;
+}
+
+.home-col {
+  color: white;
+  background-color: #DBE6FD;
+  padding: 10px;
+  flex: 50%;
+}
+
+.home-col:nth-child(2){ 
+  background-color: rgb(22, 31, 47); 
+} 
+
+.unlock-svg {
+  height: 30rem;
+  width: 20rem;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-items: center;
+  background-color: rgb(22, 31, 47); 
+}
+
+.home-col:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-col .home-btn {
+  display: flex;
+  margin: 30px;
+}
+
+.home-col h1 {
+  font-weight: 700;
+  font-size: 70px;
+  color: #185ADB;
+}
+
+.btns {
+  margin: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #06283D;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 12px;
+  text-align: center;
+}
+
+
+/* Responsive */
+@media (max-width: 665px) {
+  .nav-bar {
+    padding: 2rem 0;
+  }
+  .nav-bar h2 {
+    font-size: 30px;
+  }
+  .home-col {
+    background-color: rgb(22, 31, 47);
+  }
+  .home-col:nth-child(2) {
+    display: none;
+  }
 }

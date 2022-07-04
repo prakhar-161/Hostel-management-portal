@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import Room from './pages/Room';
 import Student from './pages/Student';
 import Staff from './pages/Staff';
+import Register from './components/auth/Register';
+import Login from './components/auth/Login';
 import NotFound from './pages/NotFound';
 
 const App = () => {
@@ -19,6 +21,8 @@ const App = () => {
         <Route path="/room" element={<Room />} />
         <Route path="/student" element={<Student />} />
         <Route path="/staff" element={<Staff />} />
+        <Route path="/register" element={<Register />} /> 
+        <Route path="/login" element={<Login />} /> 
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
