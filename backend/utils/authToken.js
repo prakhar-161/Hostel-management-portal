@@ -9,7 +9,7 @@ const generateAuthToken = (user) => {
             age: user.age,
             phone: user.phone,
             email: user.email
-        }, secretKey
+        }, secretKey, { expiresIn: '24h' }
     );
 
     return token;

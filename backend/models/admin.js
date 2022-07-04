@@ -16,7 +16,8 @@ const adminSchema = new Schema({
         type: Number,
         required: true,
         minLength: 10,
-        maxLength: 10
+        maxLength: 10,
+        unique: true
     },
     email: {
         type: String,

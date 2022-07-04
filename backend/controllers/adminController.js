@@ -27,9 +27,6 @@ const registerAdmin = async () => {
 
     user.password = bcrypt.hash(admin.password, 12);
     user = await Admin.save();
-
-    const token = generateAuthToken(user);
-    res.send(token);
 };
 
 const loginAdmin = async () => {
@@ -49,12 +46,12 @@ const loginAdmin = async () => {
     };
 
     const isMatch = await bcrypt.compare(req.body.password, user.password);
-    if(!isMatch) {
+    if(isMatch) {
+        const token = generateAuthToken(user);
+        res.send(token);
+    } else {
         return res.status(400).send('Invalid email or password');
     };
-
-    const token = generateAuthToken(user);
-    res.send(token);
 };
 
 module.exports = {
