@@ -16,12 +16,12 @@ const Dashboard = () => {
                         <h3>Room Repair / Cleaning Status</h3>
                     </div>
                     <div className="card-links">
-                        <Link to="/room" className="card-link">Add Room Repair/Cleaning or Check Info</Link>
+                        <Link to="/hostels" className="card-link">Add Room Repair/Cleaning or Check Info</Link>
                     </div>
                 </div>
                 <div className="card">
                     <div className="card-image">
-                        <img src={student} alt="Room" />
+                        <img src={student} alt="Student" />
                     </div>
                     <div className="card-title">
                         <h3>Students Info</h3>
@@ -32,13 +32,13 @@ const Dashboard = () => {
                 </div>
                 <div className="card">
                     <div className="card-image">
-                        <img src={staff} alt="Room" />
+                        <img src={staff} alt="Staff" />
                     </div>
                     <div className="card-title">
                         <h3>Staff Info</h3>
                     </div>
                     <div className="card-links">
-                        <Link to="/room" className="card-link">Add more Staff or Check their info</Link>
+                        <Link to="/staff" className="card-link">Add more Staff or Check their info</Link>
                     </div>
                 </div>
             </div>

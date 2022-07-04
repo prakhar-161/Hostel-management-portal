@@ -41,9 +41,9 @@
   flex: 50%;
 }
 
-.home-col:nth-child(2){ 
-  background-color: rgb(22, 31, 47); 
-} 
+.home-col:nth-child(2) {
+  background-color: rgb(22, 31, 47);
+}
 
 .unlock-svg {
   height: 30rem;
@@ -52,7 +52,7 @@
   margin-top: 40px;
   display: flex;
   justify-items: center;
-  background-color: rgb(22, 31, 47); 
+  background-color: rgb(22, 31, 47);
 }
 
 .home-col:nth-child(1) {
@@ -91,7 +91,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: rgb(68,68,68);
+  color: rgb(68, 68, 68);
   min-height: 80vh;
 }
 
@@ -131,7 +131,7 @@
   padding: 3px;
 }
 
-.card-image img{
+.card-image img {
   width: 100%;
   border-radius: 10px;
 }
@@ -151,25 +151,100 @@
   color: #2D31FA;
 }
 
+/* Staff page */
+.staff {
+  max-width: 75%;
+  margin: 2rem auto;
+  align-items: center;
+}
+
+.staff h1 {
+  text-align: center;
+}
+
+.staff-form {
+  margin-top: 2.5rem;
+}
+
+.staff input {
+  height: 45px;
+  width: 27%;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #0A1931;
+  margin-right: 2rem;
+  font-size: 17px;
+}
+
+.staff input:focus {
+  border: 1px solid rgb(0, 208, 255);
+}
+
+.staff button {
+  cursor: pointer;
+  background-color: #06283D;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 11px;
+  border: none;
+}
+
+/* hostels page */
+.hostels {
+  max-width: 75%;
+  margin: 2rem auto;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+
+.hostel {
+  border: 2px solid #0A1931;
+  padding: 10px;
+  text-align: center;
+}
+
+.hostel h2 {
+  margin-bottom: 10px;
+}
+
+.hostel-link {
+  text-decoration: none;
+  color: #2D31FA;
+}
+
+
+
+
+
+
 
 /* Responsive */
 @media (max-width: 665px) {
   .nav-bar {
     padding: 2rem 0;
   }
+
   .nav-bar h2 {
     font-size: 30px;
   }
+
   .home-col {
     background-color: rgb(22, 31, 47);
   }
+
   .home-col h1 {
     background-color: rgb(22, 31, 47);
     font-size: 60px;
   }
+
   .btns {
     font-size: 20px;
   }
+
   .home-col:nth-child(2) {
     display: none;
   }
