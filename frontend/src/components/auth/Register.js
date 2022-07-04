@@ -1,7 +1,11 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { StyledForm } from "./StyledForm"
 
 const Register = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/dashboard');
+  }
   return (
     <StyledForm>
       <h2>Register</h2>
@@ -14,7 +18,7 @@ const Register = () => {
         placeholder="Age"
       />
       <input 
-        type="number" 
+        type="tel" 
         placeholder="Phone number"
       />
       <input 
@@ -25,7 +29,7 @@ const Register = () => {
         type="password" 
         placeholder="Password"
       />
-      <button>Register</button>
+      <button onClick={() => handleClick()}>Register</button>
       <h3>Already registered? &nbsp;
         <Link to="/login" className="form-link">
           Login here!

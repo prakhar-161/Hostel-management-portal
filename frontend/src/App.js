@@ -9,6 +9,7 @@ import Student from './pages/Student';
 import Staff from './pages/Staff';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
+import Dashboard from './pages/Dashboard';
 import NotFound from './pages/NotFound';
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" exact element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/room" element={<Room />} />
         <Route path="/student" element={<Student />} />
         <Route path="/staff" element={<Staff />} />
