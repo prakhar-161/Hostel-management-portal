@@ -11,7 +11,7 @@ const studentSchema = new Schema({
         required: true,
         unique: true
     },
-    collegeId: {
+    studentId: {
         type: String,
         unique: true
     },
